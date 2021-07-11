@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col">
+    <button class="btn btn-primary mr-2">Import</button>
+    <button class="btn btn-secondary">Export</button>
+  </div>
+</div>
+<div class="mx-auto mt-3" style="width: 50vw">
+  <div class="row mx-auto mt-2 " style="width: 15vw">
+    <div class="col">
+      <form (ngSubmit)="addTheme()" [formGroup]="addThemeForm" class="form-inline">
+        <div class="mr-2">
+          <input class="form-control" formControlName="themeName" placeholder="Theme" type="text">
+        </div>
+        <button class="btn btn-primary">Add theme</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="row mt-3 mx-auto" style="width: 20vw">
+    <div class="col">
+      <form (ngSubmit)="addTask()" [formGroup]="addTaskForm" class="form-inline">
+        <div class="mr-2">
+          <select class="form-control" formControlName="themeName" placeholder="Theme">
+            <option>Select theme</option>
+          </select>
+        </div>
+        <div class="mr-2">
+          <input class="form-control" formControlName="taskName" placeholder="Theme" type="text">
+        </div>
+        <button class="btn btn-primary">Add theme</button>
+      </form>
+    </div>
+  </div>
+
+
+</div>
